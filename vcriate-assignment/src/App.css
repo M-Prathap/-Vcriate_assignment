@@ -1,0 +1,28 @@
+.appContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px; 
+}
+
+.sidebar {
+  flex: 1; 
+  max-width: 300px;  
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+}
+
+.flowEditor {
+  flex: 3;  
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
