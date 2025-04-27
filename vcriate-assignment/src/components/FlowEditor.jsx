@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactFlow, { addEdge, Background, Controls, MiniMap } from 'reactflow';
 import 'reactflow/dist/style.css';
-import styles from './FlowEditor.module.scss';
+import './FlowEditor.css'; 
 
 const FlowEditor = ({ nodes, setNodes, edges, setEdges }) => {
   const onConnect = (connection) => {
@@ -20,7 +20,7 @@ const FlowEditor = ({ nodes, setNodes, edges, setEdges }) => {
   };
 
   return (
-    <div className={styles.flowEditor}>
+    <div className="flowEditor">
       <ReactFlow
         nodes={nodes}
         edges={edges}

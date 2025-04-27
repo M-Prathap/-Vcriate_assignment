@@ -1,0 +1,23 @@
+/* ProductList.css */
+.productCard {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.addButton {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #ea00ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #a700b3;
+}

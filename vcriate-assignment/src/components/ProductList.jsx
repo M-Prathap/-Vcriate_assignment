@@ -1,15 +1,15 @@
 import React from "react";
-import styles from "./ProductList.module.scss";
+import './ProductList.css'; // ✅ import normal CSS
 
 const ProductList = ({ products, onAddNode }) => {
   return (
-    <div className={styles.sidebar}>
+    <div className="sidebar">
       <h2>Products</h2>
       {products.map(product => (
-        <div key={product.id} className={styles.productCard}>
+        <div key={product.id} className="productCard">
           <div><strong>{product.title}</strong></div>
           <div>${product.price}</div>
-          <button onClick={() => onAddNode(product)} className={styles.addButton}>
+          <button onClick={() => onAddNode(product)} className="addButton">
             Add to Flow
           </button>
         </div>
@@ -17,6 +17,5 @@ const ProductList = ({ products, onAddNode }) => {
     </div>
   );
 };
-
 
 export default ProductList;

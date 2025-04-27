@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProductList from './components/ProductList';
 import FlowEditor from './components/FlowEditor';
-import styles from './App.css'; 
+import './App.css'; 
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -25,8 +25,8 @@ const App = () => {
   };
 
   return (
-    <div className={styles.appContainer}>
-      <div className={styles.layout}>
+    <div className="appContainer">
+      <div className="layout">
         <ProductList products={products} onAddNode={addNode} />
         <FlowEditor nodes={nodes} setNodes={setNodes} edges={edges} setEdges={setEdges} />
       </div>
